@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container mx-auto p-4">
+    <form action="/uploads" method="post" enctype="multipart/form-data">
+      <div class="mb-4">
+        <label for="fileInput" class="block text-sm font-medium text-gray-700">
+          Upload a file
+        </label>
+        <input name="image" id="fileInput" type="file" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <button type="submit" class="inline-flex items-center px-4 py-2 bg-blue-500 border border-transparent rounded-md font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto sm:text-sm">
+        Upload
+      </button>
+    </form>
+  </div>
+</body>
+</html>
